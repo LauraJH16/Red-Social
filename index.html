@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,90 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
 </head>
+
 <body>
   <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">MiLogo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="collapsible.html"><i class="material-icons">person</i></a></li>
-      </ul>
+    <div class="row">
+      <div class="col s12 ">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo left">MiLogo</a>
+          <ul id="nav-mobile" class="right">
+            <li>
+              <a href="#"><i class="material-icons">home</i></a> 
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">person</i></a> 
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
- <div class="carousel carousel-slider">
-  <a class="carousel-item" href="#one!"><img src="assets/images/startup1.jpg"></a>
-  <a class="carousel-item" href="#two!"><img src="assets/images/startup2.jpg"></a>
-  <a class="carousel-item" href="#three!"><img src="assets/images/startup3.jpg"></a>
-  <a class="carousel-item" href="#four!"><img src="assets/images/startup4.jpg"></a>
+  <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!">
+      <img src="assets/images/startup1.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="assets/images/startup2.jpg">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="assets/images/startup3.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="assets/images/startup4.jpg">
+    </a>
   </div>
+  <!--secciones en la que publicaremos o lo que estamos pensando-->
+  <section>
+    <div class="row">
+      <div class="col s12">
+        <h2>aqui van las publicaciones recientes y pasadas de los usuarios</h2>
+      </div>
+    </div>
+  </section>
+  <!--sección de otras publicaciones de usuarios-->
+  <section>
+    <div class="row">
+      <div class=" col s12">
+        <h2>Aqui van las publicaciones de los usuarios</h2>
+      </div>
+    </div>
 
+  </section>
+  <!--Footer-->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">La plataforma premium de inversión en compañías con alto potencial de crecimiento, y la comunidad de startups más
+            activa de Europa.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <li>
+              <a target="_blank" class="grey-text text-lighten-3" href="https://www.facebook.com/">Facebook</a>
+            </li>
+            <li>
+              <a target="_blank" class="grey-text text-lighten-3" href="https://twitter.com/?lang=es">Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/?hl=es">instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
   <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
   <script src='js/app.js'></script>
 </body>
+
 </html>
