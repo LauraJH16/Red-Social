@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel='stylesheet' href='css/main.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Logo</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="card hoverable center-align">
+      <div class="card-tabs">
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab">
+            <a class="active" href="#test4">LOGIN</a>
+          </li>
+          <li class="tab">
+            <a href="#test5">REGISTER</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-content grey lighten-4">
+        <div id="test4">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div>
+                <a class="waves-effect waves-light btn">INGRESAR</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="test5">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="input-field col s12">
+                    <span>¿Eres inversor o startup? </span>
+                    <a class="waves-effect waves-light btn">Inversor</a>
+                    <a class="waves-effect waves-light btn">Startup</a>
+                  </div>
+                </div>
+              <div>
+                <a class="waves-effect waves-light btn">REGISTRAR</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
+  <script src='js/app.js'></script>
+</body>
+
+</html>
