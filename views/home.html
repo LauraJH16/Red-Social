@@ -1,128 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <title>Red Social</title>
-  <link rel='stylesheet' href='../css/main.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+  <link rel='stylesheet' href='../vendors/materialize/css/materialize.min.css'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+  <link rel='stylesheet' href='../css/main.css'>
+
 </head>
 
 <body>
-  <section id="index">
-  <nav>
-    <div class="row">
-      <div class="col s12 ">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo left">MiLogo</a>
-          <ul id="nav-mobile" class="right">
-            <li>
-              <a href="#"><i class="material-icons">home</i></a> 
-            </li>
-            <li class="btn-perfil">
-              <a href="#"><i class="material-icons">person</i></a> 
-            </li>
-            <li>
-                <a href="#"><i class="material-icons">exit_to_app</i></a> 
+  <section id='index'>
+    <nav>
+      <div class='row'>
+        <div class='col s12 '>
+          <div class='nav-wrapper'>
+            <a href='#' class='brand-logo left'>MiLogo</a>
+            <ul id='nav-mobile' class='right'>
+              <li>
+                <a href='#'>
+                  <i class='material-icons'>home</i>
+                </a>
+              </li>
+              <li class='btn-perfil'>
+                <a href='#'>
+                  <i class='material-icons'>person</i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='material-icons'>exit_to_app</i>
+                </a>
               </li>
             </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!">
-      <img src="../assets/images/startup1.jpg">
-    </a>
-    <a class="carousel-item" href="#two!">
-      <img src="../assets/images/startup2.jpg">
-    </a>
-    <a class="carousel-item" href="#three!">
-      <img src="../assets/images/startup3.jpg">
-    </a>
-    <a class="carousel-item" href="#four!">
-      <img src="../assets/images/startup4.jpg">
-    </a>
-  </div>
-  <!--secciones en la que publicaremos o lo que estamos pensando-->
-  <section id="post">
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
-            <label for="textarea1">¿Que estas pensando?</label>
-            <a class="waves-effect waves-light btn">Post</a>
           </div>
         </div>
-      </form>
-    </div>
-  </section>
-<!--Subiendo archivos-->
-<section id="file-img">
-  <div class="row">
-    <div class="col s12">
-      <h4>Suba su archivo</h4>
-      <div id="preview" class="card card-image">
-        <a href="#" id="file-select" class="waves-effect waves-light btn green">Elegir archivo</a>
-        <img class="img-file" src="#">
       </div>
-      <span class="alert alert-info" id="file-info">No hay archivo aún</span>
-      <!--<form id="file-submit" enctype="multipart/form-data">
-            <input id="file" name="file" type="file"/>
+    </nav>
+    <div class='carousel carousel-slider'>
+      <a class='carousel-item' href='#one!'>
+        <img src='../assets/images/startup1.jpg'>
+      </a>
+      <a class='carousel-item' href='#two!'>
+        <img src='../assets/images/startup2.jpg'>
+      </a>
+      <a class='carousel-item' href='#three!'>
+        <img src='../assets/images/startup3.jpg'>
+      </a>
+      <a class='carousel-item' href='#four!'>
+        <img src='../assets/images/startup4.jpg'>
+      </a>
+    </div>
+    <!--secciones en la que publicaremos o lo que estamos pensando-->
+    <section id='post'>
+      <div class='row'>
+        <form class='col s10 offset-s1'>
+          <div class='row'>
+            <div class='input-field col s12'>
+              <textarea id='textarea1' class='materialize-textarea' data-length='120'></textarea>
+              <label for='textarea1'>¿Que estas pensando?</label>
+              <img class='img-file' src='#'>
+              <a class='waves-effect waves-light btn'>Post</a>
+              <a href='#' id='file-select' class='waves-effect waves-light btn'>file</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--Subiendo archivos-->
+    <section id='file-img'>
+      <div class='row'>
+        <div class='col s12'>
+          <h4>Suba su archivo</h4>
+          <div id='preview' class='card card-image'>
+            <a href='#' id='file-select' class='waves-effect waves-light btn green'>archivo</a>
+          </div>
+          <span class='alert alert-info' id='file-info'>No hay archivo aún</span>
+          <!--<form id='file-submit' enctype='multipart/form-data'>
+            <input id='file' name='file' type='file'/>
           </form>-->
-      <input id="file" name="file" type="file"/>
-      <a href="#" class="waves-effect waves-light btn" id="file-save">Guardar</a> 
-    </div>
-  </div>
-</section>
-  <!--sección de otras publicaciones de usuarios-->
-  <section>
-    <div class="row">
-      <div class=" col s12">
-        <h2>Aqui van las publicaciones de los usuarios</h2>
+          <input id='file' name='file' type='file' />
+          <a href='#' class='waves-effect waves-light btn' id='file-save'>Guardar</a>
+        </div>
       </div>
-    </div>
+    </section>
+    <!--sección de otras publicaciones de usuarios-->
+    <section>
+      <div class='row'>
+        <div class=' col s12'>
+          <h2>Aqui van las publicaciones de los usuarios</h2>
+        </div>
+      </div>
 
+    </section>
+    <!--Footer-->
+    <footer class='page-footer'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col l6 s12'>
+            <h5 class='white-text'>Footer Content</h5>
+            <p class='grey-text text-lighten-4'>La plataforma premium de inversión en compañías con alto potencial de crecimiento, y la comunidad de startups
+              más activa de Europa.</p>
+          </div>
+          <div class='col l4 offset-l2 s12'>
+            <ul>
+              <li>
+                <a target='_blank' class='grey-text text-lighten-3' href='https://www.facebook.com/'>Facebook</a>
+              </li>
+              <li>
+                <a target='_blank' class='grey-text text-lighten-3' href='https://twitter.com/?lang=es'>Twitter</a>
+              </li>
+              <li>
+                <a target='_blank' class='grey-text text-lighten-3' href='https://www.instagram.com/?hl=es'>instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='footer-copyright'>
+        <div class='container'>
+          © 2018 Copyright Text
+          <a class='grey-text text-lighten-4 right' href='#!'>More Links</a>
+        </div>
+      </div>
+    </footer>
   </section>
-  <!--Footer-->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">La plataforma premium de inversión en compañías con alto potencial de crecimiento, y la comunidad de startups más
-            activa de Europa.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <ul>
-            <li>
-              <a target="_blank" class="grey-text text-lighten-3" href="https://www.facebook.com/">Facebook</a>
-            </li>
-            <li>
-              <a target="_blank" class="grey-text text-lighten-3" href="https://twitter.com/?lang=es">Twitter</a>
-            </li>
-            <li>
-              <a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/?hl=es">instagram</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2018 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-      </div>
-    </div>
-  </footer>
-</section>
-  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
+  <script src='../vendors/jquery/jquery-3.2.1.min.js'></script>
+  <script src='https://www.gstatic.com/firebasejs/4.2.0/firebase.js'></script>
+  <script src='../vendors/materialize/js/materialize.min.js'></script>
   <script src='../js/home.js'></script>
 </body>
 

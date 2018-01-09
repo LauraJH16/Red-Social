@@ -27,6 +27,7 @@ main {
     background: rgb(241, 237, 237);
     padding-bottom:  15px;
     padding-top: 15px;
+    margin-top: 20px;
 }
 
 .card .card-content .form-p {
