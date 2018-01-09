@@ -5,7 +5,7 @@
 }
 
 main .card {
-  width: 50%;
+  width: 100%;
 } 
 
 /*Footer*/
@@ -27,4 +27,8 @@ main {
     background: rgb(241, 237, 237);
     padding-bottom:  15px;
     padding-top: 15px;
+}
+
+.card .card-content .form-p {
+  margin-bottom: 15px;
 }
