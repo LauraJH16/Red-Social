@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  setTimeout(function() { 
+    window.location.href = 'views/login.html';
+  }, 3000);
+
   $('.carousel.carousel-slider').carousel({fullWidth: true});
 
   var config = {
@@ -90,7 +95,7 @@ $(document).ready(function(){
 
   function next1() {
       setTimeout(function() { 
-        window.location.href = '../index.html';
+        window.location.href = 'home.html';
       }, 500);
   }
 
