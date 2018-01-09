@@ -37,5 +37,12 @@ $('document').ready(function() {
       window.location.href = 'perfil.html';
     }, 500);
   });
-  
+
+  /* para que se agrege los post de los usuarios*/
+
+  $('.postext').on('click', function() {
+    var $content = $('#textarea1').val();
+    $('.content-text').append('<div>' + $content + '</div>');
+    $('#textarea1').val('');
+  });
 });
