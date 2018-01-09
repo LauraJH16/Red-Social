@@ -82,3 +82,9 @@ z-index: -9999;
 .card .tabs {
   height: 58px;
 }
+
+/* para que se agrege los post de los usuarios*/
+.card{
+  height: 60%;
+  width: 60% ;
+}
