@@ -74,3 +74,11 @@ z-index: -9999;
 .img-file {
   width: 200px;
 } 
+
+.card .tabs .tab {
+  line-height: 28px;
+}
+
+.card .tabs {
+  height: 58px;
+}
