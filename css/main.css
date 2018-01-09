@@ -19,8 +19,8 @@ main {
   flex: 1 0 auto;
 }
 
-#perfil .card .card-image a {
-  margin-bottom: 25px;
+#perfil .btn-floating.halfway-fab {
+  bottom: 0;
 }
 
 #post form {
@@ -34,12 +34,12 @@ main {
 }
 
 /*Estilos para subida de archivos*/
-body {
+#file-img {
   width: 300px;
   margin: 10px auto;
   text-align:center;
 }
-.card {
+#file-img .card {
   height: 171px;
   width: 171px;
   margin: 0 auto;
@@ -59,7 +59,7 @@ body {
   text-align: center;
   display: block;
 }
-input[type=file] {
+#file-img input[type=file] {
   position: absolute;
 visibility: hidden;
 width: 0;
