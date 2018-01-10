@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Acme');
 * {
   padding: 0;
   margin: 0;
@@ -117,4 +119,9 @@ main {
 .iconss {
   padding: 3px;
   margin-top: 13px;
+}
+
+#logoo {
+  font-family: 'Acme', sans-serif;
+  color: #fff;
 }
