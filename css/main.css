@@ -85,9 +85,9 @@ z-index: -9999;
 
 /* para que se agrege los post de los usuarios*/
 .card-text{
-  height: 70px;
+  height: 150px;
   width: 100% ;
-  padding: 50px;
+  padding: 5px;
   position: relative;
 }
 

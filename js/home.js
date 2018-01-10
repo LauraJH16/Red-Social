@@ -43,7 +43,7 @@ $(document).ready(function() {
 
   $('.postext').on('click', function() {
     var $content = $('#textarea1').val();
-    $('.content-text').append('<div class="posteando">' + $content + '</div>');
+    $('.content-text').append('<div class="posteando card">' + $content + '</div>');
     $('#textarea1').val('');
   });
 });
