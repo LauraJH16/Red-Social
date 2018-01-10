@@ -8,18 +8,26 @@ $(document).ready(function() {
     }, 300);
   });
 
-  var config = {
-    apiKey: 'AIzaSyADv1fxkUiJ1l7qjDsigV2MyCQokrarJVY',
-    authDomain: 'sign-c5945.firebaseapp.com',
-    databaseURL: 'https://sign-c5945.firebaseio.com',
-    projectId: 'sign-c5945',
-    storageBucket: 'sign-c5945.appspot.com',
-    messagingSenderId: '21338253193'
-  };
-    
-  firebase.initializeApp(config);
-
   var database = firebase.database();
 
+  var namefirst = $('.name-input').val();
+  var lastname = $('.lastname-input').val();
+  var name = namefirst + lastname;
+
+  var $userName = $('.user-name');
+
+  function writeUserData(uid, type, name) {
+    firebase.database().ref('users/' + uid).set({
+      username: name,
+      usertype: type,
+    });
+    console.log(username)
+  }
+
+  var $btnPerfil = $('.btn-perfil');
+
+  $btnPerfil.click(function() {
+    writeUserData(uid, type, name);
+  });
 
 });
