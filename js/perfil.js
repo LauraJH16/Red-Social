@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  var $btnHome = $('.btn-home');
+	
+	var $btnHome = $('.btn-home');
 
   $btnHome.click(function() {
     setTimeout(function() { 
@@ -13,15 +14,13 @@ $(document).ready(function() {
   var lastname = $('.lastname-input').val();
   var name = namefirst + lastname;
 
-  console.log(namefirst);
-
- 
   var $userName = $('.user-name');
 
   function writeUserData(uid, name) {
     firebase.database().ref('users/' + uid).set({
       username: name,
     });
+    console.log(username)
   }
 
   var $btnPerfil = $('.btn-perfil');
@@ -29,4 +28,5 @@ $(document).ready(function() {
   $btnPerfil.click(function() {
     writeUserData(uid, name);
   });
+
 });
