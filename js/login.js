@@ -2,7 +2,7 @@ $(document).ready(function() {
   var config = {
     apiKey: 'AIzaSyADv1fxkUiJ1l7qjDsigV2MyCQokrarJVY',
     authDomain: 'sign-c5945.firebaseapp.com',
-    databaseURL: 'https://sign-c5945.firebaseio.com',
+    databaseURL: 'https://sign-c5945.firebaseio.com/',
     projectId: 'sign-c5945',
     storageBucket: 'sign-c5945.appspot.com',
     messagingSenderId: '21338253193'
@@ -32,6 +32,9 @@ $(document).ready(function() {
     var $password = $('.pass-res').val();
     
     firebase.auth().createUserWithEmailAndPassword($email, $password)
+    .then(function(){
+      writeUserData(uid, name);
+    })
       .catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;

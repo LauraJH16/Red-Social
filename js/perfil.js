@@ -16,10 +16,9 @@ $(document).ready(function() {
 
   var $userName = $('.user-name');
 
-  function writeUserData(uid, type, name) {
+  function writeUserData(uid, name) {
     firebase.database().ref('users/' + uid).set({
       username: name,
-      usertype: type,
     });
     console.log(username)
   }
@@ -27,7 +26,7 @@ $(document).ready(function() {
   var $btnPerfil = $('.btn-perfil');
 
   $btnPerfil.click(function() {
-    writeUserData(uid, type, name);
+    writeUserData(uid, name);
   });
 
 });
