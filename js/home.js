@@ -42,7 +42,7 @@ $('document').ready(function() {
 
   $('.postext').on('click', function() {
     var $content = $('#textarea1').val();
-    $('.content-text').append('<div>' + $content + '</div>');
+    $('.content-text').append('<div class="posteando">' + $content + '</div>');
     $('#textarea1').val('');
   });
 });

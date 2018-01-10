@@ -84,7 +84,23 @@ z-index: -9999;
 }
 
 /* para que se agrege los post de los usuarios*/
-.card{
-  height: 60%;
-  width: 60% ;
+.card-text{
+  height: 70px;
+  width: 100% ;
+  padding: 50px;
+  position: relative;
+}
+
+.posteando{
+  position: absolute;
+}
+
+.iconitos li{
+  display: inline-block;
+  padding: 3px;
+}
+
+.iconss{
+  padding: 3px;
+  margin-top: 13px;
 }
