@@ -21,6 +21,7 @@ $(document).ready(function() {
         firebase.auth().signInWithPopUp
       }*/
     
+
   var $registroBtn = $('.btn-registro');
   var $ingresoBtn = $('.btn-ingreso');
     
@@ -32,9 +33,10 @@ $(document).ready(function() {
     var $password = $('.pass-res').val();
     
     firebase.auth().createUserWithEmailAndPassword($email, $password)
-    .then(function(){
-      writeUserData(uid, name);
-    })
+      .then(function() {
+        alert('aa');
+        writeUserData(uid, name);
+      })
       .catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
