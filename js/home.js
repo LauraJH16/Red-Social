@@ -35,7 +35,7 @@ $('document').ready(function() {
   $btnPerfil.click(function() {
     setTimeout(function() { 
       window.location.href = 'perfil.html';
-    }, 500);
+    }, 300);
   });
 
   /* para que se agrege los post de los usuarios*/
