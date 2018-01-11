@@ -25,10 +25,10 @@
         <div class='card-tabs'>
           <ul class='tabs tabs-fixed-width'>
             <li class='tab'>
-              <a class='active' href='#test4'>LOGIN</a>
+              <a href='#test4'>LOGIN</a>
             </li>
             <li class='tab'>
-              <a href='#test5'>REGISTER</a>
+              <a class='active' href='#test5'>REGISTER</a>
             </li>
           </ul>
         </div>
@@ -86,7 +86,7 @@
                   <div class='input-field col s12'>
                     <span>¿Eres inversor o startup? </span>
                     <br>
-                    <a class='waves-effect waves-light btn inversor-btn'>Inversor</a>
+                    <a class='waves-effect waves-light btn inver-btn'>Inversor</a>
                     <a class='waves-effect waves-light btn empre-btn'>Startup</a>
                   </div>
                 </div>
@@ -102,9 +102,19 @@
               </form>
             </div>
             <div>
-              <a class='waves-effect waves-light btn btn-registro'>REGISTRAR</a>
+              <a class='waves-effect waves-light btn btn-registro modal-trigger' href="#modal1">REGISTRAR</a>
             </div>
             </form>
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Registro Exitoso!!</h4>
+                <p>Ahora si puedes ingresar</p>
+              </div>
+              <div class="modal-footer">
+                      <a href="#test4" class="modal-action modal-close waves-effect btn waves-green center-block go-btn">Go!</a>
+              </div>
+            </div>
+                   
           </div>
         </div>
       </div>

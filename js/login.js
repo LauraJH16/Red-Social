@@ -20,6 +20,19 @@ $(document).ready(function() {
     
         firebase.auth().signInWithPopUp
       }*/
+
+  var $inverBtn = $('.inver-btn');
+  var $empreBtn = $('.empre-btn');
+
+  $inverBtn.click(function() {
+    $inverBtn.css('background-color', 'darkcyan');
+    $empreBtn.css('background-color', 'salmon');
+  });
+
+  $empreBtn.click(function() {
+    $empreBtn.css('background-color', 'darkcyan');
+    $inverBtn.css('background-color', 'salmon');
+  });
     
 
   var $registroBtn = $('.btn-registro');
@@ -34,8 +47,8 @@ $(document).ready(function() {
     
     firebase.auth().createUserWithEmailAndPassword($email, $password)
       .then(function() {
-        alert('aa');
         writeUserData(uid, name);
+        $('.modal').modal();
       })
       .catch(function(error) {
         // Handle Errors here.
