@@ -1,9 +1,12 @@
 $(document).ready(function() {
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
+  $('.carousel.carousel-slider').carousel({fullWidth: true}); 
+  autoplay();   
+  function autoplay() {
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 2000);
+  }
 
   // Subir archivos
- 
-
   $('#preview').hover(
     function() {
       $(this).find('a').fadeIn();
@@ -25,13 +28,8 @@ $(document).ready(function() {
     $('#file-info').text(file);
         
     reader.onload = function(e) {
-      $('#preview img').attr('src', e.target.result);
-      
-      $('#file-save').click(function() {
-        $('.content-text').append('<div class="posteando card"> <img class="img-file img-post center-block" src="#"></div>');
-        $('.img-post').attr('src', e.target.result);
-        $('#preview img').attr('src', '#');
-      });
+      $('.content-text').append('<div class="posteando card"> <img class="img-file img-post center-block" src="#"> <br><br><span class="grey-text">Publicado a las :'+ getTime() +'</span><br><br></div></div>');
+      $('.img-post').attr('src', e.target.result);
     };
          
     reader.readAsDataURL(this.files[0]);
@@ -50,9 +48,16 @@ $(document).ready(function() {
 
   $('.postext').on('click', function() {
     var $content = $('#textarea1').val();
-    $('.content-text').append('<div class="posteando card">' + $content + '</div>');
+    $('.content-text').append('<div class="posteando card">' + $content + '<br><br><span class="grey-text">Publicado a las :'+ getTime() +'</span><br><br></div>');
     $('#textarea1').val('');
   });
+
+  function getTime() {
+    var currentDate = new Date();
+    var hh = currentDate.getHours();
+    var mm = currentDate.getMinutes();
+    return hh + ':' + ((mm < 10 ? '0' : '') + mm);
+  }
 
   $btnSalir.click(function() {
     firebase.auth().signOut().then(function() {

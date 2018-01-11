@@ -14,12 +14,13 @@
 </head>
 
 <body>
+  
   <section id='index'>
     <nav>
       <div class='row'>
         <div class='col s12 '>
           <div class='nav-wrapper'>
-            <a href='#' class='brand-logo left' id="logoo">Startup Social Network</a>
+            <img class="logo center-block" src="../assets/images/logo.png" alt="logo">
             <ul id='nav-mobile' class='right'>
               <li>
                 <a href='#'>
@@ -42,16 +43,16 @@
       </div>
     </nav>
     <div class='carousel carousel-slider'>
-      <a class='carousel-item' href='#one!'>
+      <a class='carousel-item one' href='#one!'>
         <img src='../assets/images/startup1.jpg'>
       </a>
-      <a class='carousel-item' href='#two!'>
+      <a class='carousel-item two' href='#two!'>
         <img src='../assets/images/startup2.jpg'>
       </a>
-      <a class='carousel-item' href='#three!'>
+      <a class='carousel-item three' href='#three!'>
         <img src='../assets/images/startup3.jpg'>
       </a>
-      <a class='carousel-item' href='#four!'>
+      <a class='carousel-item four' href='#four!'>
         <img src='../assets/images/startup4.jpg'>
       </a>
     </div>
@@ -64,6 +65,7 @@
               <textarea id='textarea1' class='materialize-textarea' data-length='120'></textarea>
               <label for='textarea1'>¿Que estas pensando?</label>
               <a class='waves-effect waves-light btn postext'>Post</a>
+              <a href='#' id='file-select' class='waves-effect waves-light btn'>File</a>
             </div>
           </div>
         </form>
@@ -73,17 +75,10 @@
     <section id='file-img'>
       <div class='row'>
         <div class='col s12'>
-          <h5>Share a picture</h5>
-          <div id='preview' class='card card-image'>
-            <img class='img-file' src='#'>
-            <a href='#' id='file-select' class='waves-effect waves-light btn green'>archivo</a>
-          </div>
-          <span class='alert alert-info' id='file-info'>No hay archivo aún</span>
           <!--<form id='file-submit' enctype='multipart/form-data'>
             <input id='file' name='file' type='file'/>
           </form>-->
           <input id='file' name='file' type='file' />
-          <a href='#' class='waves-effect waves-light btn' id='file-save'>Compartir</a>
         </div>
       </div>
     </section>
