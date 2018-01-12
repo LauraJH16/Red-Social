@@ -121,24 +121,45 @@ main {
   margin-top: 13px;
 }
 
-#logoo {
-  font-family: 'Acme', sans-serif;
-  color: #fff;
-}
-
 .splash {
 	background: linear-gradient(to top, slategray, silver);
   height: 100vh;
   
 }
 
-.splash h1 {
+.logo-splash {
   margin-top: 70%;
-  color: white;
 }
 
 .logo {
-  width: 250px;
-  margin-top: 5px;
+  width: 230px;
+  padding-top: 1%;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
+.nav-wrapper {
+  position: absolute;
+  top: 0px;
+}
+
+.one-main {
+  display: inline-block;
+}
+
+#perfil .logo {
+  padding-top: 11px;
+}
+
+#index .logo {
+  padding-top: 11px;
+}
+
+.news {
+  color: salmon;
 }
 
