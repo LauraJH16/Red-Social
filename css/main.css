@@ -10,6 +10,13 @@ main .card {
   width: 100%;
 }
 
+#login main {
+  background-image: url('../assets/images/fondo-login.jpg');
+  background-size: cover;
+  height: 450px;
+  background-position: center bottom;
+}
+
 
 /*Footer*/
 
@@ -128,7 +135,9 @@ main {
 }
 
 .logo-splash {
-  margin-top: 70%;
+  margin-top: 10%;
+  position: absolute;
+
 }
 
 .logo {
@@ -137,7 +146,7 @@ main {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0px;
   width: 100%;
 }

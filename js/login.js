@@ -1,25 +1,32 @@
 $(document).ready(function() {
   var config = {
-    apiKey: 'AIzaSyADv1fxkUiJ1l7qjDsigV2MyCQokrarJVY',
-    authDomain: 'sign-c5945.firebaseapp.com',
-    databaseURL: 'https://sign-c5945.firebaseio.com/',
-    projectId: 'sign-c5945',
-    storageBucket: 'sign-c5945.appspot.com',
-    messagingSenderId: '21338253193'
+    apiKey: 'AIzaSyCz9xauTDRFIDPU6M3YZhaI6Ues-vgcU9Q',
+    authDomain: 'network-red.firebaseapp.com',
+    databaseURL: 'https://network-red.firebaseio.com',
+    projectId: 'network-red',
+    storageBucket: 'network-red.appspot.com',
+    messagingSenderId: '775688474324'
   };
-    
+
   firebase.initializeApp(config);
       
-  /* var user = null;
-      var $loginBtn = $('#start-login');
+  var user = null;
+
+  var $ingresoGoogle = $('#btn-google');
+
     
-      $loginBtn.on('click',googleLogin);
+  $ingresoGoogle.click(googleLogin);
     
-      function googleLogin(){
-        var provider = new firebase.auth.GoogleAuthProvider();
+  function googleLogin() {
+    var provider = new firebase.auth.GoogleAuthProvider();
     
-        firebase.auth().signInWithPopUp
-      }*/
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+      var user = result.user;
+      console.log(user);
+      next1();
+      // ...
+    });
+  }
 
   var $inverBtn = $('.inver-btn');
   var $empreBtn = $('.empre-btn');
@@ -35,47 +42,9 @@ $(document).ready(function() {
   });
     
 
-  var $registroBtn = $('.btn-registro');
-  var $ingresoBtn = $('.btn-ingreso');
+  var $ingresoFacebook = $('#btn-fb');
     
-  $registroBtn.on('click', Registrar);
-  $ingresoBtn.on('click', Ingresar);
-    
-  function Registrar() {
-    var $email = $('.email-res').val();
-    var $password = $('.pass-res').val();
-    
-    firebase.auth().createUserWithEmailAndPassword($email, $password)
-      .then(function() {
-        writeUserData(uid, name);
-        $('.modal').modal();
-      })
-      .catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(errorCode);
-      });
-  }
-    
-  function Ingresar() {
-    var $email2 = $('.email-ingreso').val();
-    var $password2 = $('.pass-ingreso').val();
-    var $message = $('.message-error');
-    
-    firebase.auth().signInWithEmailAndPassword($email2, $password2)
-      .then(function() {
-        next1();
-      })
-      .catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ...
-        $message.append('<p class="red-text">*Datos incorretos</p>');
-      });
-  }
-    
+  
   function Observador() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
@@ -100,7 +69,6 @@ $(document).ready(function() {
   }
     
   Observador();
-    
   function next1() {
     setTimeout(function() { 
       window.location.href = 'home.html';

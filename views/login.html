@@ -20,108 +20,12 @@
         </div>
       </nav>
     </header>
-    <div class="row">
-    <main class="col s12 l4 offset-l4 one-main">
-      <div class='card hoverable center-align'>
-        <div class='card-tabs'>
-          <ul class='tabs tabs-fixed-width'>
-            <li class='tab'>
-              <a href='#test4'>LOGIN</a>
-            </li>
-            <li class='tab'>
-              <a class='active' href='#test5'>REGISTER</a>
-            </li>
-          </ul>
-        </div>
-        <div class='card-content grey lighten-4'>
-          <div id='test4'>
-            <div class='row'>
-              <form class='col s12'>
-                <div class='row'>
-                  <div class='input-field col s12'>
-                    <input id='email1' type='email' class='validate email-ingreso'>
-                    <label for='email'>Email</label>
-                  </div>
-                </div>
-                <div class='row'>
-                  <div class='input-field col s12'>
-                    <input id='password1' type='password' class='validate pass-ingreso'>
-                    <label for='password'>Password</label>
-                  </div>
-                  <div class='message-error'>
+    <div>
+      <p>Conectate con</p>
+      <a id="btn-google" class="waves-effect waves-light btn">Google</a>
+      <a id="btn-fb" class="waves-effect waves-light btn">Facebook</a>
 
-                  </div>
-                </div>
-                <div>
-                  <a class='waves-effect waves-light btn btn-ingreso'>INGRESAR</a>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div id='test5'>
-            <div class='row'>
-              <form class='col s12'>
-                <div class='row'>
-                  <div class='input-field col s6'>
-                    <input id='first_name' type='text' class='validate name-input'>
-                    <label for='first_name'>First Name</label>
-                  </div>
-                  <div class='input-field col s6'>
-                    <input id='last_name' type='text' class='validate lastname-input'>
-                    <label for='last_name'>Last Name</label>
-                  </div>
-                </div>
-                <div class='row'>
-                  <div class='input-field col s12'>
-                    <input id='email' type='email' class='validate email-res'>
-                    <label for='email'>Email</label>
-                  </div>
-                </div>
-                <div class='row'>
-                  <div class='input-field col s12'>
-                    <input id='password' type='password' class='validate pass-res'>
-                    <label for='password'>Password</label>
-                  </div>
-                </div>
-                <div class='row'>
-                  <div class='input-field col s12'>
-                    <span>¿Eres inversor o startup? </span>
-                    <br>
-                    <a class='waves-effect waves-light btn inver-btn'>Inversor</a>
-                    <a class='waves-effect waves-light btn empre-btn'>Startup</a>
-                  </div>
-                </div>
-            </div>
-            <div>
-              <form action='#'>
-                <p class='center-align form-p'>
-                  <input type='checkbox' id='test6' />
-                  <label for='test6'>I agree to
-                    <a href='#'>Terms of Service</a>
-                  </label>
-                </p>
-              </form>
-            </div>
-            <div>
-              <a class='waves-effect waves-light btn btn-registro modal-trigger' href="#modal1">REGISTRAR</a>
-            </div>
-            </form>
-            <div id="modal1" class="modal">
-              <div class="modal-content">
-                <h4>Registro Exitoso!!</h4>
-                <p>Ahora si puedes ingresar</p>
-              </div>
-              <div class="modal-footer">
-                      <a href="#test4" class="modal-action modal-close waves-effect btn waves-green center-block go-btn">Go!</a>
-              </div>
-            </div>
-                   
-          </div>
-        </div>
-      </div>
-      </div>
-    </main>
-  </div>
+    </div>
     <!--Footer-->
     <footer class='page-footer'>
       <div class='container'>
@@ -161,7 +65,7 @@
   </section>
 
   <script src='../vendors/jquery/jquery-3.2.1.min.js'></script>
-  <script src='https://www.gstatic.com/firebasejs/4.2.0/firebase.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
   <script src='../vendors/materialize/js/materialize.min.js'></script>
   <script src='../js/home.js'></script>
   <script src='../js/login.js'></script>

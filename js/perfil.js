@@ -13,7 +13,6 @@ $(document).ready(function() {
   var lastname = $('.lastname-input').val();
   var name = namefirst + lastname;
 
-  console.log(namefirst);
 
  
   var $userName = $('.user-name');
