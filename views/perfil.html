@@ -12,13 +12,12 @@
 </head>
 
 <body>
-  <section id='perfil'>
     <nav>
       <div class='row'>
         <div class='col s12 '>
           <div class='nav-wrapper'>
-            <img class="logo col s6" src="../assets/images/logo.png" alt="logo">
-            <ul id='nav-mobile' class='right'>
+            <img id="logo-big" class="logo col s6" src="../assets/images/logo.png" alt="logo">
+            <ul id='nav-mobile' class="list-nav" class='right'>
               <li class='btn-home'>
                 <a href='#'>
                   <i class='material-icons'>home</i>
@@ -40,17 +39,17 @@
       </div>
     </nav>
 
+    <section id='perfil'>
     <div class='row'>
       <div class='col s6 offset-s3 m6 l2 offset-l5'>
         <div class='card'>
           <div class='card-image'>
-            <img src='../assets/images/user1.png'>
+            <img id="img-user" src=''>
             <a id='file-select' class='btn-floating halfway-fab waves-effect waves-light red btn-add-image'>
               <i class='material-icons'>add_a_photo</i>
             </a>
           </div>
-          <div class='card-content'>
-            <span class='card-title center-align'>Nombre</span>
+          <div class='card-content root'>
             <p class='center-align red-text'>Emprendedor</p>
           </div>
         </div>
@@ -77,142 +76,78 @@
       <div class="card-content grey lighten-4">
         <div id="test4"></div>
         <div id="test5">
-          <div class="row">
-              <div class="col s12 m8 offset-m2 l8 offset-l2">
-                  <div class="card-panel grey lighten-5 z-depth-1">
-                    <div class="row valign-wrapper">
-                      <div class="col s2 l2">
-                        <img src="../assets/images/user.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                      </div>
-                      <div class="col s10 l10">
-                        <span class="black-text">
-                          Name
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m8 offset-m2 l8 offset-l2">
-                    <div class="card-panel grey lighten-5 z-depth-1">
-                      <div class="row valign-wrapper">
-                        <div class="col s2 l2">
-                          <img src="../assets/images/user.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col s10 l10">
-                          <span class="black-text">
-                            Name
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s12 m8 offset-m2 l8 offset-l2">
-                      <div class="card-panel grey lighten-5 z-depth-1">
-                        <div class="row valign-wrapper">
-                          <div class="col s2 l2">
-                            <img src="../assets/images/user.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                          </div>
-                          <div class="col s10 l10">
-                            <span class="black-text">
-                              Name
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-          </div>
         </div>
         <div id="test6">
-            <div class="row">
-                <div class="col s12 m8 offset-m2 l8 offset-l2">
-                    <div class="card-panel grey lighten-5 z-depth-1">
-                      <div class="row valign-wrapper">
-                        <div class="col s2 l2">
-                          <img src="../assets/images/user.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col s10 l10">
-                          <span class="black-text">
-                            Name
-                          </span>
-                        </div>
-                      </div>
-                    </div>
+          <div class="row">
+            <div class="col s12 m8 offset-m2 l8 offset-l2">
+              <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <div class="col s2 l2">
+                    <img src="../assets/images/user.jpg" alt="" class="circle responsive-img">
+                    <!-- notice the "circle" class -->
                   </div>
-                  <div class="col s12 m8 offset-m2 l8 offset-l2">
-                      <div class="card-panel grey lighten-5 z-depth-1">
-                        <div class="row valign-wrapper">
-                          <div class="col s2 l2">
-                            <img src="../assets/images/user.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                          </div>
-                          <div class="col s10 l10">
-                            <span class="black-text">
-                              Name
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col s12 m8 offset-m2 l8 offset-l2">
-                        <div class="card-panel grey lighten-5 z-depth-1">
-                          <div class="row valign-wrapper">
-                            <div class="col s2 l2">
-                              <img src="../assets/images/user.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                            </div>
-                            <div class="col s10 l10">
-                              <span class="black-text">
-                                Name
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Footer-->
-    <footer class='page-footer'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col l6 s12'>
-            <p class='grey-text text-lighten-4'>La red social de inversión en compañías con alto potencial de crecimiento, y la comunidad de startups más activa
-              de America Latina.</p>
-          </div>
-          <div class='col l4 offset-l2 s12 iconss'>
-            <p class="center-align">Encuentranos en:</p>
-            <ul class="iconitos center-align">
-              <li>
-                <a target='_blank' class='grey-text text-lighten-3' href='#'>
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a target='_blank' class='grey-text text-lighten-3' href='#'>
-                  <i class="fa fa-google-plus" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a target='_blank' class='grey-text text-lighten-3' href='#'>
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
+                  <div class="col s10 l10">
+                    <span class="black-text">
+                      Name
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class='footer-copyright'>
-        <div class='container center-align'>
-          © 2018 Copyright Startup Social Network
-        </div>
+    </section>
+    <section id="login">
+    <div>
+        <p>Conectate con</p>
+        <a id="btn-google" class="waves-effect waves-light btn">Google</a>
+        <a id="btn-fb" class="waves-effect waves-light btn">Facebook</a>
       </div>
-    </footer>
-  </section>
+    </section>
+      <!--Footer-->
+      <footer class='page-footer'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col l6 s12'>
+              <p class='grey-text text-lighten-4'>La red social de inversión en compañías con alto potencial de crecimiento, y la comunidad de startups más activa
+                de America Latina.</p>
+            </div>
+            <div class='col l4 offset-l2 s12 iconss'>
+              <p class="center-align">Encuentranos en:</p>
+              <ul class="iconitos center-align">
+                <li>
+                  <a target='_blank' class='grey-text text-lighten-3' href='#'>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target='_blank' class='grey-text text-lighten-3' href='#'>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target='_blank' class='grey-text text-lighten-3' href='#'>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='footer-copyright'>
+          <div class='container center-align'>
+            © 2018 Copyright Startup Social Network
+          </div>
+        </div>
+      </footer>
+ 
   <script src='../vendors/jquery/jquery-3.2.1.min.js'></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
   <script src='../vendors/materialize/js/materialize.min.js'></script>
   <script src='../js/perfil.js'></script>
-  <script src='../js/home.js'></script>
   <script src='../js/login.js'></script>
+  <script src='../js/home.js'></script>
 </body>
 
 </html>

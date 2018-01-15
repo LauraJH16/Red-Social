@@ -5,6 +5,6 @@ jQuery(document).ready(function() {
   }, 'slow');
 
   setTimeout(function() {
-    window.location.href = 'views/login.html';
+    window.location.href = 'views/perfil.html';
   }, 3000);
 });
