@@ -10,25 +10,15 @@ main .card {
   width: 100%;
 }
 
-#login main {
+#login {
   background-image: url('../assets/images/fondo-login.jpg');
   background-size: cover;
-  height: 450px;
-  background-position: center bottom;
+  height: 540px;
+  background-position: top center;
 }
 
 
 /*Footer*/
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
-}
 
 #perfil .btn-floating.halfway-fab {
   bottom: 0;
@@ -115,12 +105,29 @@ main {
 
 .posteando {
   position: relative;
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .iconitos li {
   display: inline-block;
-  padding: 3px;
+  padding: 15px;
+  width: 19px;
+  height: 27px;
+  color: #fff;
+}
+
+.iconitos li:hover i{
+  color: salmon;
+}
+
+.iconitos a {
+  width: 13px;
+  height: 17px;
+}
+
+.iconitos i {
+  width: 13px;
+  height: 14px;
 }
 
 .iconss {
@@ -129,7 +136,7 @@ main {
 }
 
 .splash {
-	background: linear-gradient(to top, slategray, silver);
+	background: linear-gradient(to bottom, slategray,black);
   height: 100vh;
   
 }
@@ -145,12 +152,6 @@ main {
   padding-top: 1%;
 }
 
-footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-}
-
 .nav-wrapper {
   position: absolute;
   top: 0px;
@@ -160,15 +161,75 @@ footer {
   display: inline-block;
 }
 
-#perfil .logo {
-  padding-top: 11px;
+#logo-big {
+  padding-top: 1%;
 }
 
-#index .logo {
+#home .logo,#logo-big .logo-small {
   padding-top: 11px;
 }
 
 .news {
   color: salmon;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+#home .secondary-content {
+  float: none;
+}
+
+#post label {
+  font-size: 1.3rem;
+}
+
+.carousel img {
+  height: 182.5px;
+}
+
+#login #btn-google {
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+#login btn {
+  width: 100%;
+}
+
+#login h4 {
+  margin: 0;
+  padding-top: 40%;
+}
+
+#perfil>.row {
+  background-color: #e4d9d9;
+}
+
+@media (min-width: 992px) {
+  footer {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  #login h4 {
+    padding-top: 10%;
+  }
+
+
+  nav .row .col.s6 {
+    padding-top: 5px;
+    width: 20%;
+  }
+
+  nav .list-nav {
+    float: right;
+  }
+
+  .carousel img {
+    height: 300px;
+  }
 }
 
