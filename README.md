@@ -1,9 +1,9 @@
 # PRODUCTO FINAL:  **Startup Social Network"*
-* En este pruducto final nos tocó elaborar una red social dado el siguiente contexto, que sucede si un inversionista desea invertir un milloncito de dolares en un negocio pero no está muy seguro del rubro del negocio en el que le gustaría invetir su dinero. Por otro lado, tenemos a un emprendedor necesitando de un capital para emprender un negocio exitoso y seguro.
+* Para este pruducto final decidimos elaborar una red social dado el siguiente contexto: Que sucede si un inversionista desea invertir un monto de dinero en un negocio pero él no está muy seguro del rubro en el que deberia invirtir su dinero. Por otro lado, tenemos a los emprendedores que estan buscado capital para emprender una startup exitoso y seguro.
 
-* La red social que creamos busca crear una red de contantos-networking tan grande que tanto los inverisonista como los emprendedores podran hallarse uno al otro sin perder mucho tiempo y con seguridad de estar tratando con personas que buscan los mismo que ellos.
+* La red social que creamos busca hacer networking entre emprendedores e inversionistas, una red tan grande que podrá rápidamente poner en contacto emprendedores e inversionistas en un tiempo bastante corto y de manera bastante segura para que de esa manera puedan iniciar un negocio exitoso.
 
-### La tecnología que usamos
+### Tecnologías que usamos
 
 + HTML 5
 + CSS 3
@@ -11,11 +11,24 @@
 + jQuery
 + Firebase
 
+# Vista en modo desktop
+
+![Sin titulo](assets/docs/splashd.png)
+
+![Sin titulo](assets/docs/logeod.png)
+
+![Sin titulo](assets/docs/homed.png)
 
 
-![Sin titulo](assets/docs/img1.png)
+# Vista mobile
 
-![Sin titulo](assets/docs/img.png)
+![Sin titulo](assets/docs/splashm.png)
+
+![Sin titulo](assets/docs/homem.png)
+
+![Sin titulo](assets/docs/usuariom.png)
+
+![Sin titulo](assets/docs/newfeed.png)
 
 
 ## Autores:
