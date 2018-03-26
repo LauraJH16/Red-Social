@@ -1,7 +1,8 @@
-# PRODUCTO FINAL:  **Startup Social Network"*
-* Para este pruducto final decidimos elaborar una red social dado el siguiente contexto: Que sucede si un inversionista desea invertir un monto de dinero en un negocio pero él no está muy seguro del rubro en el que deberia invirtir su dinero. Por otro lado, tenemos a los emprendedores que estan buscado capital para emprender una startup exitoso y seguro.
+# GL NETWORK
 
 * La red social que creamos busca hacer networking entre emprendedores e inversionistas, una red tan grande que podrá rápidamente poner en contacto emprendedores e inversionistas en un tiempo bastante corto y de manera bastante segura para que de esa manera puedan iniciar un negocio exitoso.
+
+![Resultado](http://i63.tinypic.com/15zr1u0.png)
 
 ### Tecnologías que usamos
 
